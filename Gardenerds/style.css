@@ -1,0 +1,233 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#left{
+    width: 75%;
+    height: 100%;
+    background-color: red;
+}
+#right{
+    width: 25%; 
+    height: 100%;
+    /* background-color: skyblue; */
+}
+#left #hero{
+    width: 100%;
+    height: 70%;
+    /* background-size: cover; */
+    background-image: url(https://images.unsplash.com/photo-1508013861974-9f6347163ebe?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+#left #about{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+    background-color: #1B1E20;
+    color: #fff;
+}
+
+#left #about #intro {
+    display: flex;
+   width: 45%;
+   height: 100%;
+   
+}
+#left #about #intro #floater {
+   width: 35%;
+   height: 100%;
+   text-align: right;
+   padding-top: 60px;
+   padding-right: 10px;
+   letter-spacing: 0.2cap;
+   font-size: x-small;
+   opacity: 0.5;
+   /* background-color: blue; */
+}
+#left #about #intro #content {
+   width: 65%;
+   height: 100%;
+   padding: 50px 10px ;
+   font-size: 16px;
+   /* background-color: chartreuse; */
+}
+#left #content p{
+    padding-top: 10px;
+    font-size: 12px;
+    opacity: 0.5;
+    word-spacing: 0.16cap;
+    letter-spacing: 0.08cap;
+}
+#left #content h1{
+    font-weight: 500;
+    letter-spacing: 0.04cap;
+}
+#left #about #basics {
+   width: 50%;
+   height: 100%;
+
+}
+
+#bleft{
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px 70px 0px;
+
+}
+#row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    /* background-color: darkgoldenrod; */
+}
+#row #box1{
+    display: flex;
+    width: 45%;
+    height: 100%;
+
+}
+#icon{
+    width: 20%;
+    height: 100%;
+
+}
+#desc{
+    width: 80%;
+    height: 100%;
+
+}
+#box2{
+    display: flex;
+    width: 45%;
+    height: 100%;
+
+}
+h5{
+padding-bottom: 7% ;   
+}
+h6{
+    opacity: .5;
+    font-weight: 400;
+}
+h3{
+    padding-bottom: 15px;
+}
+
+#rtop{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    /* background-color: darkviolet; */
+    padding: 70px;
+}
+#right #rtop a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    color: black;
+    margin-bottom: 25px;
+}
+
+#rtop a:nth-child(2) {
+    font-size: 1200px;
+}
+#icons{
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 15px;
+}
+#icons i{
+    font-size: 20px;
+}
+#selected{
+    margin-left: 20px;
+    position: relative;
+}
+
+#selected::before{
+    content: "";
+    width: 11px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    margin-left: -20px;
+    top: 50%;
+    transform: translate(0,-50%);
+
+}
+#btmflr{
+    
+    width: 100px;
+    height: 120px;
+    background-color: aqua;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(https://images.unsplash.com/photo-1555324528-0c5948568293?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+
+}
+#btmflr i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+#rbot #context{
+    padding: 10px;
+    width: 90%;
+    height: 30%;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+#rbot #context h6{
+    font-size: 15px;
+}
+#rbot #context i{
+    font-size: 15px;
+    padding-top: 2px;
+}
+#rbot #context p{
+    font-size: 15px;
+    padding-top: 2px;
+}
+#rbot{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 30%;
+    background-image: url(https://images.unsplash.com/photo-1483794344563-d27a8d18014e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: right;
+    /* transform: scaleX(-1); */
+}
