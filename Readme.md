@@ -1,6 +1,6 @@
 # Landing Pages 
 
----
+
 
 1. Look Out Magazine 
 2. Garden Nerds
